@@ -14,4 +14,10 @@ public class DataBase {
         clients.add(new Client("456987","dishant@gmail.com","dishant Chaudhary",123456,345,958665001));
 
     }
+    public static void fillAccount(){
+        accounts.add(new Account("123456",565656,"chequing",3300));
+        accounts.add(new Account("456789",676767,"chequing",12300));
+        accounts.add(new Account("789123",989898,"saving",6780));
+        accounts.add(new Account("456987",5323232,"saving",1235));
+    }
 }
