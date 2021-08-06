@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class AccountDAL {
     public static ArrayList<Account> accountList=new ArrayList<>();
     //method for fetching Account number
-    public static String[] getAccountNumbers(int userID){
+    public static String[] getAccountNumbers(String userID){
+        accountList.clear();
         for(Account ac: DataBase.accounts)
             if(ac.getUserID().equals(userID))
                 accountList.add(ac);

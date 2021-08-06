@@ -13,10 +13,12 @@ public class DataBase {
         clients.add(new Client("789123","najmehakbari@gmail.com","Najmeh Akbari",4567,789,990901234));
         clients.add(new Client("456987","dishant@gmail.com","dishant Chaudhary",123456,345,958665001));
 
-        accounts.add(new Account("123456",565656,"chequing",3300));
-        accounts.add(new Account("456789",676767,"chequing",12300));
-        accounts.add(new Account("789123",989898,"saving",6780));
-        accounts.add(new Account("456987",5323232,"saving",1235));
+        accounts.add(new Account("123456",565656,"saving",3300));
+        accounts.add(new Account("123456",786767,"current",12300));
+        accounts.add(new Account("123456",565656,"chequing",33500));
+        accounts.add(new Account("456789",676767,"chequing",17300));
+        accounts.add(new Account("456789",989898,"saving",6780));
+        accounts.add(new Account("456987",5323232,"current",1235));
 
     }
 
