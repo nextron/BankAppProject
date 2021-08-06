@@ -5,13 +5,15 @@ public class Client {
     private String emailID;
     private String userName;
     private int accessCardNumber;
+    private int pinNumber;
     private int phoneNo;
 
-    public Client(String userID, String emailID, String userName, int accessCardNumber, int phoneNo) {
+    public Client(String userID, String emailID, String userName, int accessCardNumber, int pinNumber, int phoneNo) {
         this.userID = userID;
         this.emailID = emailID;
         this.userName = userName;
         this.accessCardNumber = accessCardNumber;
+        this.pinNumber = pinNumber;
         this.phoneNo = phoneNo;
     }
 
@@ -45,6 +47,14 @@ public class Client {
 
     public void setAccessCardNumber(int accessCardNumber) {
         this.accessCardNumber = accessCardNumber;
+    }
+
+    public int getPinNumber() {
+        return pinNumber;
+    }
+
+    public void setPinNumber(int pinNumber) {
+        this.pinNumber = pinNumber;
     }
 
     public int getPhoneNo() {
