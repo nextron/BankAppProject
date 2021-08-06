@@ -2,6 +2,7 @@ package com.example.bankappproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,7 +36,8 @@ public class LoginActivity extends AppCompatActivity {
                 int pinNumber = Integer.parseInt(edtPinNumber.getText().toString());
                 if(ClientDAL.validateUser(cardNumber,pinNumber)){
                     //System.out.println("User Name:"+ ClientDAL.loggedInUserName + " User ID: "+ ClientDAL.loggedInUserID);
-
+                    Intent intent = new Intent(LoginActivity.this,ClientActivity.class);
+                    startActivity(intent);
                     Toast.makeText(this, "You have logged in.", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(this, "Please provide a valid Card Number and PIN", Toast.LENGTH_SHORT).show();
